@@ -1,36 +1,15 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ToDoList(3 pages)ReactRedux
+![alt text](image-1.png)
 
-## Getting Started
+## Cтек: React, Next Router, Redux, TS
+- Главная страница, отображает список дел с Api, позволяет менять статус задачи с помощью чекбокса, на кнопках внизу настроена фильтрация задач(все, выполенные, не выполенные), кнопка Delete удаляет задачу, нажатием на таску мы переходим на страницу 3, нажатием на кнопку AddTask переходим на страницу 2.
+- 2 Страница (addTask), позволяет добавлять новую задачу с помощью кнопки SaveTask или Enter (пустую задачу добавить нельзя)
+- 3 Страница (tasks), показывает детальную информацию о задаче(id, titile, status), нажатием на Title можно отредактировать задачу, нажатием на кнопки можно менять статус задачи(выполнено, не выполнено) или вернуться на главную страницу
 
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Инструкция по запуску
+- Создайте папку для проекта и перейдите в неё.
+- Склонируйте репозиторий `git clone git@github.com:AplusO1/ReactReduxTS-3-Pages.git`
+- Установите зависимости `npm install`
+- Запускайте проект `npm run dev`
+- Запустить линтер `npm run lint`
+---
