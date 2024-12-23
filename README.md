@@ -1,4 +1,4 @@
-# ToDoList(3 pages)ReactRedux
+# TodosNext(3pages)
 ![alt text](image-1.png)
 
 ## Cтек: React, Next Router, Redux, TS
@@ -8,7 +8,7 @@
 
 ### Инструкция по запуску
 - Создайте папку для проекта и перейдите в неё.
-- Склонируйте репозиторий `git clone git@github.com:AplusO1/ReactReduxTS-3-Pages.git`
+- Склонируйте репозиторий `git clone git@github.com:AplusO1/ReactNextTodos.git`
 - Установите зависимости `npm install`
 - Запускайте проект `npm run dev`
 - Запустить линтер `npm run lint`
