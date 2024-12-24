@@ -2,7 +2,6 @@ import { createSlice, createAsyncThunk, PayloadAction } from "@reduxjs/toolkit";
 import { v1 } from "uuid";
 import { FilterValuesType, TasksState, TaskType } from "@/utils/types";
 
-
 const initialState: TasksState = {
   tasks: [],
   loading: false,
@@ -84,8 +83,8 @@ const tasksSlice = createSlice({
         // Фильтр задач по id
         state.tasks = [
           ...state.tasks,
-          ...action.payload.filter((newTask) => 
-            !state.tasks.some((task) => task.id === newTask.id)
+          ...action.payload.filter(
+            (newTask) => !state.tasks.some((task) => task.id === newTask.id)
           ),
         ];
       })

@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 import { EditableSpanPropsType } from "@/utils/types";
 import styles from "./EditableSpan.module.scss";

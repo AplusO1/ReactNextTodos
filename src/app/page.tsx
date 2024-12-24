@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 import { useCallback, useEffect, useMemo } from "react";
 import { ToDoList } from "../components/ToDoList/Todolist";
@@ -13,18 +13,15 @@ import {
 } from "../state/tasksSlice";
 import { FilterValuesType } from "@/utils/types";
 
-export const App = () => {
+export default function Home() {
   const dispatch = useDispatch<AppDispatch>();
-  
-  const filter = useSelector<RootState, FilterValuesType>(
-    (state) => state.tasks.filter
-  );
-  
-  const { tasks, loading, error } = useSelector(
+
+  const { tasks, loading, error, filter } = useSelector(
     (state: RootState) => ({
       tasks: state.tasks.tasks,
       loading: state.tasks.loading,
       error: state.tasks.error,
+      filter: state.tasks.filter,
     }),
     shallowEqual
   );
@@ -73,11 +70,11 @@ export const App = () => {
   );
 
   if (loading) {
-    return <div >Loading...</div>;
+    return <div>Loading...</div>;
   }
 
   if (error) {
-    return <div >Error: {error}</div>;
+    return <div>Error: {error}</div>;
   }
 
   return (
@@ -93,5 +90,4 @@ export const App = () => {
       />
     </div>
   );
-};
-export default App;
+}

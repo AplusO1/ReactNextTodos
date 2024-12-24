@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 import { useCallback } from "react";
 import { TaskDetails } from "../../../components/TaskDetails/TaskDetails";

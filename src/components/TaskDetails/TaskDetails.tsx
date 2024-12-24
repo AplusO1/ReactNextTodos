@@ -1,11 +1,11 @@
-'use client'
+"use client";
 
-import { useSelector } from 'react-redux';
-import { RootState } from '../../state/store';
-import { useParams, useRouter } from 'next/navigation';
-import { EditableSpan } from '../EditableSpan/EditableSpan';
+import { useSelector } from "react-redux";
+import { RootState } from "../../state/store";
+import { useParams, useRouter } from "next/navigation";
+import { EditableSpan } from "../EditableSpan/EditableSpan";
 import styles from "./TaskDetails.module.scss";
-import { TaskDetailsProps } from '@/utils/types';
+import { TaskDetailsProps } from "@/utils/types";
 
 export function TaskDetails(props: TaskDetailsProps) {
   const { id } = useParams();
@@ -15,7 +15,7 @@ export function TaskDetails(props: TaskDetailsProps) {
 
   if (!task) return <div>Task not found</div>;
 
-  const onBackClick = () => router.push('/');
+  const onBackClick = () => router.push("/");
 
   return (
     <div className={styles.inputWrapper}>

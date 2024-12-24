@@ -5,8 +5,6 @@ import styles from "./Task.module.scss";
 import { TaskPropsType } from "../../utils/types";
 import { ChangeEvent } from "react";
 
-
-
 export default function Task(props: TaskPropsType) {
   const router = useRouter();
 

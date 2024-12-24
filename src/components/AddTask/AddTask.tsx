@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 import { ChangeEvent, KeyboardEvent, useState } from "react";
 import styles from "./AddTask.module.scss";
@@ -14,7 +14,7 @@ export const AddTask = (props: AddTaskProps) => {
     if (title.trim() !== "") {
       props.addTask(title);
       setTitle("");
-      router.push('/');
+      router.push("/");
     } else {
       setError("Title is required");
     }
@@ -32,7 +32,7 @@ export const AddTask = (props: AddTaskProps) => {
       if (title.trim() !== "") {
         props.addTask(title);
         setTitle("");
-        router.push('/')
+        router.push("/");
       } else {
         setError("Title is required");
       }
